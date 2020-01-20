@@ -66,6 +66,49 @@ Assim teremos a nossa aplicação rodando no container, basta entrar no browser 
 
 ## Testes
 
+Os testes tiveram como objetivo verificar a existência de erros na aplicação.
+- Foi criado uma classe "Nti", onde a mesma possui todos os métodos necessários para fazer a automatização utilizando o Selenium.
+- Cada teste tem uma função especifica, onde é necessário apenas executar o arquivo .py e assim o teste retornará se passou ou não no teste.
 
 
--
+### Retornos:
+- Se o teste retornar GREEN é porque a funcionalidade está retornando o valor esperado.
+- Se o teste retornar RED é porque a funcionalidade não está retornando o valor esperado.
+
+### Ferramentas necessárias e suas versões
+
+- Python 3.7
+- Selenium webdriver
+- Geckodriver
+
+## Cenário: Verificação de Login
+
+- Como a aplicação exige de uma autenticação é importante garantir o maximo de cobertura sob essa funcionalidade para que não exista meios de acessar as funcionalidades de admin e de user sem ter acesso ao login.
+
+### Teste 1
+
+- Fazer login com o USERNAME: user e o PASSWORD: user.
+> Resultado esperado: Fazer login com sucesso.
+
+- Vídeo do teste 1: https://drive.google.com/open?id=1F366hIs1j4ER3jxNagAQn9TCT1-akftu
+
+### Teste 2
+
+- Fazer login com o USERNAME: admin e o PASSWORD: admin.
+> Resultado esperado: Fazer login com sucesso.
+
+- Vídeo do teste 2: https://drive.google.com/open?id=17HLxm_qZZlXhYpzCS56lX3mBgQd93v_-
+
+### Teste 3
+
+- Fazer login com o USERNAME: user e o PASSWORD: 123.
+> Resultado esperado: Não fazer login com sucesso.
+
+- Vídeo do teste 3: https://drive.google.com/open?id=13Znm3hS9yQdZ38mNz5tMGkONT74fTItl
+
+### Teste 4
+
+- Fazer login com o USERNAME: teste e o PASSWORD: teste.
+> Resultado esperado: Fazer login com sucesso.
+
+- Vídeo do teste 4: https://drive.google.com/open?id=1Q_yunEFnIty0zw-p_VpZ2iBoqcmh-0XH
